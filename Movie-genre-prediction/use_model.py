@@ -1,6 +1,6 @@
 import joblib
-model = joblib.load("genre_prediction_model.pkl")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")
+model = joblib.load(r"Movie-genre-prediction\genre_prediction_model.pkl")
+vectorizer = joblib.load(r"Movie-genre-prediction\tfidf_vectorizer.pkl")
 
 #Put the movie description here
 new_data = ["description of the movie"]

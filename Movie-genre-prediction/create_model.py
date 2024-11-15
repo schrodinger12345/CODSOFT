@@ -32,7 +32,7 @@ if 'index' not in test_data.columns:
 
 test_data[['index', 'Predicted_Genre']].to_csv("test_predictions.csv", index=False)
 
-joblib.dump(model, "genre_prediction_model.pkl")
-joblib.dump(vectorizer, "tfidf_vectorizer.pkl")
+joblib.dump(model, r"Movie-genre-prediction\genre_prediction_model.pkl")
+joblib.dump(vectorizer, r"Movie-genre-prediction\tfidf_vectorizer.pkl")
 
 print("Model and predictions saved successfully.")
